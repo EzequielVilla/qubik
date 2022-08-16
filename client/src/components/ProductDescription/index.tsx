@@ -16,7 +16,6 @@ interface Props {
 export const ProductDescription = (props: Props) => {
   const { condition, picture, price, title, sold_quantity, description } =
     props.item;
-  const condicion = condition === "new" ? "nuevo" : "usado";
 
   return (
     <Root>
@@ -31,7 +30,7 @@ export const ProductDescription = (props: Props) => {
       </DescriptionContainer>
       <InfoContainer>
         <Text>
-          {condicion}-{sold_quantity} vendidos
+          {condition}-{sold_quantity} vendidos
         </Text>
         <BoldSubtitle>{title}</BoldSubtitle>
         <BoldPrice>
