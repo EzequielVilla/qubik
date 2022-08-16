@@ -1,4 +1,5 @@
 import { Item } from "../../pages/Search";
+import { GreenDot } from "../../ui/dot";
 import { CardImagen } from "../../ui/Imagen";
 import { Price, Text, Title } from "../../ui/Text";
 import {
@@ -25,7 +26,7 @@ export const Card = (props: Props) => {
       </ImageContainer>
       <PriceTitleContainer>
         <Price>
-          {price.currency} {price.amount}
+          {price.currency} {price.amount} {free_shipping ? <GreenDot /> : null}
         </Price>
         <Title>{title}</Title>
       </PriceTitleContainer>
