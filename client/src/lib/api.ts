@@ -8,7 +8,7 @@ const fetchApi = async (direction: string, config: RequestOptions) => {
   const API_URL =
     process.env.NODE_ENV == "development"
       ? "http://localhost:3000/api/"
-      : "pag de heroku";
+      : "https://qubik.vercel.app/api/";
   const url = API_URL + direction;
 
   const fullConfig = {
