@@ -5,7 +5,7 @@ interface RequestOptions {
 }
 
 const fetchApi = async (direction: string, config: RequestOptions) => {
-  const API_URL = "https://qubik.vercel.app/api/";
+  const API_URL = "https://qubik-challenge.herokuapp.com/";
   const url = API_URL + direction;
 
   const fullConfig = {
