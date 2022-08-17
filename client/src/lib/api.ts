@@ -10,6 +10,7 @@ const fetchApi = async (direction: string, config: RequestOptions) => {
       ? "http://localhost:3000/api/"
       : "https://qubik.vercel.app/api/";
   const url = API_URL + direction;
+  console.log({ url, env: process.env.NODE_ENV });
 
   const fullConfig = {
     ...config,
