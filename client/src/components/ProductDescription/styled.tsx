@@ -20,10 +20,13 @@ export const ImageContainer = styled.div`
 
 export const DescriptionContainer = styled.div`
   grid-area: 2 / 1 / 3 / 2;
+  padding: 10px;
 `;
 export const InfoContainer = styled.div`
   grid-area: 1 / 3 / 2 / 4;
   display: grid;
+  padding: 10px;
+
   justify-items: center;
   align-items: center;
   grid-template-rows: 1fr 1fr 1fr 1fr;
