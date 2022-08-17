@@ -5,7 +5,7 @@ interface RequestOptions {
 }
 
 const fetchApi = async (direction: string, config: RequestOptions) => {
-  const API_URL = "https://qubik-challenge.herokuapp.com/";
+  const API_URL = "https://qubik-challenge.herokuapp.com/api/";
   const url = API_URL + direction;
 
   const fullConfig = {
